@@ -8,7 +8,7 @@ permalink: /MainHub
 
 | MainHub | Lessons | Game Overview | Link to Main Repo | Link to GitHub |
 | ------- | ------ | ------ | ------ | ------ |
-| [Let's Go!](https://aashihegu1-stack.github.io/Group/MainHub) | [Let's Go!](https://aashihegu1-stack.github.io/Group/Lessons) | [Let's Go!](https://aashihegu1-stack.github.io/Group/PGO) | [Let's Go!](https://captainsam12.github.io/portfolio-real/) | [Let's Go!](https://github.com/CaptainSam12) |
+| [Let's Go!](https://CaptainSam12.github.io/college-ready/MainHub) | [Let's Go!](https://CaptainSam12.github.io/college-ready/Lessons) | [Let's Go!](https://CaptainSam12.github.io/college-ready/PGO) | [Let's Go!](https://captainsam12.github.io/portfolio-real/) | [Let's Go!](https://github.com/CaptainSam12) |
 
 ---
 
@@ -17,14 +17,14 @@ This is my MainHub for CS111 Review. Here, I will be going over The Software Dev
 
 | Page | Date | Link |
 | ------- | ------ | ------ |
-| 📊 Software Engineering Practices | 03/19/26 | [Let's Go!](https://aashihegu1-stack.github.io/Group/SEP) | 
-| 🎯 Software Development Life Cycle | 03/19/26 | [Let's Go!](https://aashihegu1-stack.github.io/Group/SDLC) |
-| 🔀 Retrospective Engineering Practices | 03/19/26 | [Let's Go!](https://aashihegu1-stack.github.io/Group/REP) |
-| 📋 Data Types | 03/19/26 | [Let's Go!](https://aashihegu1-stack.github.io/Group/DT) |
-| ☑️ Operators | 03/19/26 | [Let's Go!](https://aashihegu1-stack.github.io/Group/Operators) |
-| 🔢 Control Structures | 03/19/26 | [Let's Go!](https://aashihegu1-stack.github.io/Group/Control-Structures) |
-| 📝 Input/Output | 03/19/26 | [Let's Go!](https://aashihegu1-stack.github.io/Group/In-Out) |
-| 🚗 Classes | 03/19/26 | [Let's Go!](https://aashihegu1-stack.github.io/Group/Classes) |
-| 📊 Coding Practices | 03/19/26| [Let's Go!](https://aashihegu1-stack.github.io/Group/Coding-Practices) |
+| 📊 Software Engineering Practices | 03/19/26 | [Let's Go!](https://CaptainSam12.github.io/college-ready/SEP) | 
+| 🎯 Software Development Life Cycle | 03/19/26 | [Let's Go!](https://CaptainSam12.github.io/college-ready/SDLC) |
+| 🔀 Retrospective Engineering Practices | 03/19/26 | [Let's Go!](https://CaptainSam12.github.io/college-ready/REP) |
+| 📋 Data Types | 03/19/26 | [Let's Go!](https://CaptainSam12.github.io/college-ready/DT) |
+| ☑️ Operators | 03/19/26 | [Let's Go!](https://CaptainSam12.github.io/college-ready/Operators) |
+| 🔢 Control Structures | 03/19/26 | [Let's Go!](https://CaptainSam12.github.io/college-ready/Control-Structures) |
+| 📝 Input/Output | 03/19/26 | [Let's Go!](https://CaptainSam12.github.io/college-ready/In-Out) |
+| 🚗 Classes | 03/19/26 | [Let's Go!](https://CaptainSam12.github.io/college-ready/Classes) |
+| 📊 Coding Practices | 03/19/26| [Let's Go!](https://CaptainSam12.github.io/college-ready/Coding-Practices) |
 
 
