@@ -20,7 +20,7 @@ You can reference the code here:
 
 | Level 1 | Level 2 | Level 3 | Issues/Documentation |
 | ------- | ------ | ------ | ------ |
-| [View!](https://github.com/aashihegu1-stack/SAR/blob/main/assets/js/GameEnginev1/GameLevelPirateHunt.js) | [View!](https://github.com/aashihegu1-stack/SAR/blob/main/assets/js/GameEnginev1/GameLevelPirateMegaGame2.js) | [View!](https://github.com/aashihegu1-stack/SAR/blob/main/assets/js/GameEnginev1/GameLevelPirateBoss.js) | [View!](https://github.com/aashihegu1-stack/SAR/issues/4) | 
+| [View!](https://github.com/aashihegu1-stack/SAR/blob/main/assets/js/GameEnginev1.1/GameLevelPirateHunt.js) | [View!](https://github.com/aashihegu1-stack/SAR/blob/main/assets/js/GameEnginev1.1/GameLevelPirateMegaGame2.js) | [View!](https://github.com/aashihegu1-stack/SAR/blob/main/assets/js/GameEnginev1.1/GameLevelPirateBoss.js) | [View!](https://github.com/aashihegu1-stack/SAR/issues/4) | 
 
 
 And you can play the game here:
