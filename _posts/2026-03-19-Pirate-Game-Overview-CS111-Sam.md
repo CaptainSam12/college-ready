@@ -15,17 +15,18 @@ permalink: /PGO
 
 This is my main overview for the PirateMegaGame. It has examples of what I used for certain topics that align with CS 111 Requirements:
 
-You can reference the code here:
+You can reference the code here: 
+- We will keep making edits to the code, so the code you see on the files below may not be updated. If you would like to see if we have made any changes to our code, please go to our issues!
 
 | Level 1 | Level 2 | Level 3 | Issues/Documentation |
 | ------- | ------ | ------ | ------ |
-| [View!](https://github.com/aashihegu1-stack/Group/blob/main/assets/js/GameEnginev1/GameLevelPirateHunt.js) | [View!](https://github.com/aashihegu1-stack/Group/blob/main/assets/js/GameEnginev1/GameLevelPirateMegaGame2.js) | [View!](https://github.com/aashihegu1-stack/Group/blob/main/assets/js/GameEnginev1/GameLevelPirateBoss.js) | [View!](https://github.com/aashihegu1-stack/Group/issues/4) | 
+| [View!](https://github.com/aashihegu1-stack/SAR/blob/main/assets/js/GameEnginev1/GameLevelPirateHunt.js) | [View!](https://github.com/aashihegu1-stack/SAR/blob/main/assets/js/GameEnginev1/GameLevelPirateMegaGame2.js) | [View!](https://github.com/aashihegu1-stack/SAR/blob/main/assets/js/GameEnginev1/GameLevelPirateBoss.js) | [View!](https://github.com/aashihegu1-stack/SAR/issues/4) | 
 
 
 And you can play the game here:
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-    <a href="https://aashihegu1-stack.github.io/Group/gamify/PirateMegaGame" style="text-decoration: none;">
+    <a href="https://aashihegu1-stack.github.io/SAR/gamify/PirateMegaGame" style="text-decoration: none;">
         <div style="background-color: #ff002f; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             Play
         </div>
