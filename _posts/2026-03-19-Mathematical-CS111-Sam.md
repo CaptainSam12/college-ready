@@ -3,7 +3,7 @@ layout: post
 codemirror: true
 title: Mathematical
 description: Mathematical - CS111 Review
-permalink: /Mathematical
+permalink: /mathematical
 ---
 | MainHub | Lessons | Game Overview |
 | ------- | ------ | ------ |
