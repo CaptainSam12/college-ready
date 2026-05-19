@@ -6,41 +6,37 @@ description: Testing Verification + Documentation - CS111 Review
 permalink: /tvd
 ---
 
+## **1. Code Documentation — JSDoc Comments**
 
----
-
-## 1. Code Documentation — JSDoc Usage
-
-Clear documentation makes your code understandable and maintainable.  
-Here’s an example of how JSDoc is used in the engine.  
+Writing clear documentation ensures that anyone reading your code (including you months later) can understand how each part works.  
+Below is an example of how JSDoc is used in the engine.  
 From `Character.js`:
 
 ```js
 /**
- * The Character class represents any moving entity in the game world,
- * including the player and AI-controlled creatures.
+ * Represents any active entity in the game world, such as the player or NPCs.
  *
- * @property {Object} position  - Current x/y coordinates.
- * @property {Object} velocity  - Current movement vector.
- * @property {number} size      - Render size of the object.
- * @method draw     - Renders the character.
- * @method update   - Applies physics and movement.
- * @method destroy  - Removes the character from the game.
+ * @property {Object} position  - Contains x/y coordinates.
+ * @property {Object} velocity  - Movement vector applied each frame.
+ * @property {number} size      - Render size of the entity.
+ * @method draw     - Renders the entity on the canvas.
+ * @method update   - Applies physics and updates position.
+ * @method destroy  - Removes the entity from the game environment.
  */
 class Character extends GameObject {
     /**
-     * @param {Object|null} spriteData - Optional sprite sheet information.
+     * @param {Object|null} spriteInfo - Optional sprite configuration.
      * @param {Object|null} env        - Reference to the game environment.
      */
-    constructor(spriteData = null, env = null) { ... }
+    constructor(spriteInfo = null, env = null) { ... }
 }
 ```
 
-And from `Player.js`:
+From `Player.js`:
 
 ```js
 /**
- * Handles key release events and updates movement state.
+ * Handles key release events and updates movement state accordingly.
  *
  * @param {Object} event - The keyup event containing keyCode.
  */
@@ -53,44 +49,42 @@ handleKeyUp({ keyCode }) {
 }
 ```
 
-**Goal:** Maintain at least **10% comment density** across your codebase.
+**Goal:** Maintain at least **10% comment density** across your code.
 
 ---
 
-### JSDoc Practice Task (Rewritten)
+### **JSDoc Practice Task**
 
 ```js
 %%js
-// Add JSDoc comments for each method in this class.
-
- /**
-  * ScoreManager tracks the player's current score and personal best.
-  *
-  * @property {number} score      - Score for the active run.
-  * @property {number} bestScore  - Highest score achieved.
-  * @property {string} name       - Player's display name.
-  */
-class ScoreManager {
+/**
+ * ScoreBoard keeps track of the player's current score and their personal record.
+ *
+ * @property {number} current   - Score for the active run.
+ * @property {number} record    - Highest score achieved.
+ * @property {string} username  - Player's display name.
+ */
+class ScoreBoard {
 
     /**
-     * @param {string} name - Name to display on the leaderboard.
+     * @param {string} username - Name shown on the leaderboard.
      */
-    constructor(name) {
-        this.name = name;
-        this.score = 0;
-        this.bestScore = 0;
+    constructor(username) {
+        this.username = username;
+        this.current = 0;
+        this.record = 0;
     }
 
     /**
-     * Increase the score by a given amount.
+     * Add points to the current score.
      *
-     * @param {number} amount - Points to add.
-     * @returns {number} Updated score value.
+     * @param {number} value - Amount of points to add.
+     * @returns {number} Updated score.
      */
-    add(amount) {
-        if (amount > 0) this.score += amount;
-        if (this.score > this.bestScore) this.bestScore = this.score;
-        return this.score;
+    add(value) {
+        if (value > 0) this.current += value;
+        if (this.current > this.record) this.record = this.current;
+        return this.current;
     }
 
     /**
@@ -99,48 +93,49 @@ class ScoreManager {
      * @returns {void}
      */
     reset() {
-        this.score = 0;
+        this.current = 0;
     }
 
     /**
-     * Produce a formatted summary string for UI display.
+     * Returns a formatted summary string.
      *
-     * @returns {string} Summary of current and best scores.
+     * @returns {string} Summary of current and record scores.
      */
     summary() {
-        return `${this.name} — Score: ${this.score}, Best: ${this.bestScore}`;
+        return `${this.username} — Current: ${this.current}, Record: ${this.record}`;
     }
 }
 
-const sm = new ScoreManager("Seonyoo");
-sm.add(100);
-sm.add(250);
-console.log(sm.summary());
-sm.reset();
-sm.add(50);
-console.log(sm.summary());
+const sb = new ScoreBoard("Berry");
+sb.add(100);
+sb.add(250);
+console.log(sb.summary());
+sb.reset();
+sb.add(50);
+console.log(sb.summary());
 ```
 
 ---
 
-## 2. Gameplay Testing — Movement & Collision Checks
+## **2. Gameplay Testing — Level & Collision Verification**
 
-Manual testing checklist:
+Manual testing checklist for verifying core gameplay:
 
 | Test | What to check | Expected behavior |
 |------|---------------|------------------|
-| Movement | WASD + arrows | Moves correctly, stops at edges |
-| Jumping | Press W | Smooth rise + fall |
+| Player movement | Arrow keys + WASD | Moves correctly, stops at edges |
+| Jumping | Press W | Smooth upward motion + gravity fall |
 | Coin pickup | Touch coin | Coin disappears, score increases |
-| Enemy hit | Shark touches player | Explosion + restart |
-| Level finish | Reach goal | Loads next level |
-| Boundaries | Move to edges | Player stays inside canvas |
+| Enemy collision | Shark touches player | Explosion + level restart |
+| Level completion | Reach goal | Next level loads |
+| Boundary check | Move to edges | Player stays inside canvas |
 
 Collision logic from `Shark.js`:
 
 ```js
 handleCollisionEvent() {
     const player = this.gameEnv.gameObjects.find(obj => obj instanceof Player);
+
     this.velocity.x = 0;
     this.velocity.y = 0;
 
@@ -156,45 +151,45 @@ handleCollisionEvent() {
 
 ---
 
-## 3. API Integration Testing
+## **3. API Integration Testing**
 
 ```js
-// Test: POST a score, then GET the leaderboard to confirm persistence.
-async function verifyLeaderboard() {
+// Test: POST a score, then GET leaderboard to confirm it saved.
+async function testLeaderboardFlow() {
     const payload = { playerName: "TestUser", score: 9999 };
 
-    // POST
-    const postResponse = await fetch(`${javaURI}/api/scores`, {
+    // POST request
+    const post = await fetch(`${javaURI}/api/scores`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
         body: JSON.stringify(payload)
     });
-    console.log("POST status:", postResponse.status);
+    console.log("POST status:", post.status);
 
-    // GET
-    const getResponse = await fetch(`${javaURI}/api/scores`, {
+    // GET request
+    const get = await fetch(`${javaURI}/api/scores`, {
         credentials: "include"
     });
-    const list = await getResponse.json();
+    const list = await get.json();
 
-    const exists = list.some(entry =>
-        entry.playerName === "TestUser" && entry.score === 9999
+    const exists = list.some(
+        entry => entry.playerName === "TestUser" && entry.score === 9999
     );
 
-    console.log("Entry found:", exists);
+    console.log("Score saved:", exists);
 }
 ```
 
 ---
 
-## 4. API Error Handling
+## **4. API Error Handling**
 
 ```js
 fetch(options.URL, requestOptions)
     .then(res => {
         if (!res.ok) {
-            const msg = `Login failed: ${res.status}`;
+            const msg = `Login failed — status ${res.status}`;
             console.log(msg);
             document.getElementById(options.message).textContent = msg;
             return;
@@ -202,7 +197,7 @@ fetch(options.URL, requestOptions)
         options.callback();
     })
     .catch(err => {
-        console.log("Network or CORS issue:", err);
+        console.log("Network/CORS issue:", err);
         document.getElementById(options.message).textContent =
             "Network or CORS issue: " + err;
     });
@@ -210,11 +205,11 @@ fetch(options.URL, requestOptions)
 
 ---
 
-### Error Handling Test (Rewritten)
+### **Error Handling Test (Rewritten Version)**
 
 ```js
 %%js
-async function safeFetch(url, label) {
+async function fetchSafe(url, label) {
     try {
         const res = await fetch(url);
 
@@ -233,13 +228,13 @@ async function safeFetch(url, label) {
 }
 
 // Test 1 — invalid URL
-await safeFetch(
+await fetchSafe(
     "https://official-joke-api.appspot.com/jokes/does_not_exist",
     "Bad endpoint"
 );
 
 // Test 2 — valid URL
-await safeFetch(
+await fetchSafe(
     "https://official-joke-api.appspot.com/random_joke",
     "Good endpoint"
 );
@@ -247,13 +242,13 @@ await safeFetch(
 
 ---
 
-## Summary
+## **Summary**
 
-| Area | Task | Tool |
-|------|------|------|
+| Area | What to do | Tool |
+|------|-------------|------|
 | Documentation | Add JSDoc to all classes/methods | Code review |
 | Gameplay testing | Verify movement, collisions, transitions | Manual playtest |
 | Integration testing | POST → GET leaderboard | Network tab |
-| Error handling | try/catch + response.ok checks | Code review |
+| API error handling | try/catch + response.ok checks | Code review |
 
 ---
