@@ -1,8 +1,8 @@
 ---
 layout: post
 codemirror: true
-title: Writing Classes
-description: Writing Classes - CS111 Review
+title: Methods and Parameters
+description: Methods and Parameters - CS111 Review
 permalink: /m-p
 ---
 

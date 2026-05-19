@@ -87,11 +87,15 @@ It’s one of the core skills in object‑oriented programming.
 
 When we see lines like this:
 
+```js
 class Player extends Character {
+```
 
 It shows how "Player" inherits traits from an already established class such as character. In our pirate themed game. we see:
 
+```js
 class Rival-Pirate extends Skeleton-Guard
+```
 
 Skeleton-Guard is a level 1 enemy, which we can extend upon and make a level 2 enemy such as Rival-Pirate. We can now give Rival-Pirate more traits such as higher XP and more attack damage.
 
