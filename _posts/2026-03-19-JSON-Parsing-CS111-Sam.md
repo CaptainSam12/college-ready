@@ -164,3 +164,11 @@ JSON parsing shows that you understand:
 JSON is the universal language of web‑based games and applications.
 
 ---
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
+    <a href="http://captainsam12.opencodingsociety.com/MainHub" style="text-decoration: none;">
+        <div style="background-color: #f91d1d; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Back To MainHub
+        </div>
+    </a>
+</div>
+---

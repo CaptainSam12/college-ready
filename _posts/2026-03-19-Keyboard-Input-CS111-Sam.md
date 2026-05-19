@@ -195,3 +195,11 @@ Keyboard input shows that you understand:
 Keyboard input is one of the most important skills in game programming.
 
 ---
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/canvas-rendering" style="text-decoration: none;">
+        <div style="background-color: #ff7a7a; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Canvas Rendering
+        </div>
+    </a>
+</div>
+---

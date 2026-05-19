@@ -141,3 +141,12 @@ API integration shows that you understand:
 This is a key skill for modern web‑based games and applications.
 
 ---
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/A-I-O" style="text-decoration: none;">
+        <div style="background-color: #f9ff86; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Asynchronous I/O
+
+        </div>
+    </a>
+</div>
+---

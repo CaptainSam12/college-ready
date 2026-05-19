@@ -162,3 +162,12 @@ Game environment configuration shows that you understand:
 This is a key part of building clean, maintainable game architecture.
 
 ---
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/API-Integration" style="text-decoration: none;">
+        <div style="background-color: #c090ff; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            API Integration
+
+        </div>
+    </a>
+</div>
+---

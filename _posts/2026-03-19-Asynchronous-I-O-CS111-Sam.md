@@ -159,3 +159,13 @@ Asynchronous I/O shows that you understand:
 This is a core skill for any web‑based game or application.
 
 ---
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/JSON-Parsing" style="text-decoration: none;">
+        <div style="background-color: #ff5555; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            JSON Parsing
+
+        </div>
+    </a>
+</div>
+---
