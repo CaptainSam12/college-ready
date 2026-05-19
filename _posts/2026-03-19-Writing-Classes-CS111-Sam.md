@@ -95,12 +95,11 @@ class Rival-Pirate extends Skeleton-Guard
 
 Skeleton-Guard is a level 1 enemy, which we can extend upon and make a level 2 enemy such as Rival-Pirate. We can now give Rival-Pirate more traits such as higher XP and more attack damage.
 
-And you can play the game here:
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-    <a href="https://aashihegu1-stack.github.io/SAR/gamify/PirateMegaGame" style="text-decoration: none;">
+    <a href="http://captainsam12.opencodingsociety.com/m-p" style="text-decoration: none;">
         <div style="background-color: #ff002f; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
-        Methods & Parameters
+            Methods & Parameters
         </div>
     </a>
 </div>

@@ -21,6 +21,13 @@ permalink: /OOP
     </a>
 </div>
 
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/m-p" style="text-decoration: none;">
+        <div style="background-color: #00ffea; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Methods & Parameters
+        </div>
+    </a>
+</div>
 
 <div id="oop-app" style="font-family: Arial; max-width: 650px;">
   <h2>Object-Oriented Programming </h2>
