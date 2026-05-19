@@ -3,7 +3,7 @@ layout: post
 codemirror: true
 title: Constructor Chaining
 description: Constructor Chaining - CS111 Review
-permalink: /m-o
+permalink: /c-c
 ---
 
 | MainHub | Lessons | Game Overview |
