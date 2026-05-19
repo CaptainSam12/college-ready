@@ -1,9 +1,9 @@
 ---
 layout: post
 codemirror: true
-title: Code Highlights
-description: Code Highlights - CS111 Review
-permalink: /code-highlights
+title: Testing Verification + Documentation
+description: Testing Verification + Documentation - CS111 Review
+permalink: /tvd
 ---
 
 
