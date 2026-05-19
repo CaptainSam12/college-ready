@@ -12,6 +12,23 @@ permalink: /Operators
 
 ---
 
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/mathematical" style="text-decoration: none;">
+        <div style="background-color: #bd97ff; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Mathematical
+        </div>
+    </a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/String-Operations" style="text-decoration: none;">
+        <div style="background-color: #97e3ff; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            String Operations
+        </div>
+    </a>
+</div>
+
+---
 <div id="operators-app" style="font-family: Arial; max-width: 650px;">
   <h2>Operators (Interactive Viewer)</h2>
   <p>Click a category to explore examples and explanations.</p>

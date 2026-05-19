@@ -11,6 +11,37 @@ permalink: /Control-Structures
 | [Let's Go!](https://CaptainSam12.github.io/college-ready/MainHub) | [Let's Go!](https://CaptainSam12.github.io/college-ready/Lessons) | [Let's Go!](https://CaptainSam12.github.io/college-ready/PGO) |
 
 
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/js/iterations" style="text-decoration: none;">
+        <div style="background-color: #cb9aff; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Iterations
+        </div>
+    </a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/js/nested-conditionals" style="text-decoration: none;">
+        <div style="background-color: #59ffbd; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Conditionals
+        </div>
+    </a>
+</div>
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/js/nested-conditionals" style="text-decoration: none;">
+        <div style="background-color: #f0ff9a; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Nested Conditionals
+        </div>
+    </a>
+</div>\
+
+
+
+
+
+
+
 ---
 
 <div id="control-app" style="font-family: Arial; max-width: 650px;">

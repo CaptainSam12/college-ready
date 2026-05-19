@@ -118,3 +118,11 @@ Method overriding shows that you understand:
 It’s a key skill in object‑oriented programming and game development.
 
 ---
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/c-c" style="text-decoration: none;">
+        <div style="background-color: #faf68b; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Constructor Chaining
+        </div>
+    </a>
+</div>

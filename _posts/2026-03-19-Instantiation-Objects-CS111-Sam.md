@@ -140,3 +140,11 @@ This demonstrates:
 - A real level object (`level1`)
 
 ---
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/inheritance" style="text-decoration: none;">
+        <div style="background-color: #f76486; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Inheritance
+        </div>
+    </a>
+</div>

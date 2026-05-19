@@ -94,3 +94,12 @@ Using methods with parameters shows that you understand:
 
 It’s a core skill in object‑oriented programming.
 
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/i-o" style="text-decoration: none;">
+        <div style="background-color: #ffcf5e; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Instantatiation & Objects
+        </div>
+    </a>
+</div>
+

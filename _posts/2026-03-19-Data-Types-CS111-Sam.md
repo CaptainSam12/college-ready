@@ -13,6 +13,47 @@ permalink: /DT
 
 ---
 
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/nn" style="text-decoration: none;">
+        <div style="background-color: #9affee; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Numbers
+        </div>
+    </a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/js/strings" style="text-decoration: none;">
+        <div style="background-color: #ff9ad7; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Strings
+        </div>
+    </a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/js/booleans" style="text-decoration: none;">
+        <div style="background-color: #ffb561; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Booleans
+        </div>
+    </a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/js/arrays" style="text-decoration: none;">
+        <div style="background-color: #bd97ff; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Arrays
+        </div>
+    </a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/js/json" style="text-decoration: none;">
+        <div style="background-color: #ff7a7a; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Objects JSON
+        </div>
+    </a>
+</div>
+
+---
 
 <div id="datatype-app" style="font-family: Arial; max-width: 650px;">
   <h2>Data Types (Interactive Viewer)</h2>
