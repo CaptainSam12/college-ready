@@ -1,9 +1,9 @@
 ---
 layout: post
 codemirror: true
-title: Pirate Game Overview
+title: Mini Lesson Documentation
 description: Pirate Game Overview - CS111 Review
-permalink: /PGO
+permalink: /MLD
 ---
 
 | MainHub | Lessons | Game Overview |

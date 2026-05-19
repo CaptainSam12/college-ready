@@ -6,6 +6,23 @@ description: Testing Verification + Documentation - CS111 Review
 permalink: /tvd
 ---
 
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/MLD" style="text-decoration: none;">
+        <div style="background-color: #ff7a7a; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Mini Lesson Documentation
+        </div>
+    </a>
+</div>
+
+Rest is below in this order:
+
+- Code Documentation + Code Highlights
+- Gameplay Testing
+- Integration Testing
+- API Error Handling
+
+
+
 ## **1. Code Documentation — JSDoc Comments and Code Highlights**
 
 Writing clear documentation ensures that anyone reading your code (including you months later) can understand how each part works.  
@@ -205,7 +222,7 @@ fetch(options.URL, requestOptions)
 
 ---
 
-### **Error Handling Test (Rewritten Version)**
+### **Error Handling Test**
 
 ```js
 %%js
