@@ -12,7 +12,59 @@ permalink: /In-Out
 
 
 ---
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/k-i" style="text-decoration: none;">
+        <div style="background-color: #688bff; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Keyboard Input
+        </div>
+    </a>
+</div>
 
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/canvas-rendering" style="text-decoration: none;">
+        <div style="background-color: #ff7a7a; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Canvas Rendering
+        </div>
+    </a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/GameEnv-Configuration" style="text-decoration: none;">
+        <div style="background-color: #ffb445; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+           GameEnv Configuration
+
+        </div>
+    </a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/API-Integration" style="text-decoration: none;">
+        <div style="background-color: #c090ff; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            API Integration
+
+        </div>
+    </a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/A-I-O" style="text-decoration: none;">
+        <div style="background-color: #f9ff86; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Asynchronous I/O
+
+        </div>
+    </a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/JSON-Parsing" style="text-decoration: none;">
+        <div style="background-color: #ff5555; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            JSON Parsing
+
+        </div>
+    </a>
+</div>
+
+---
 
 <div id="io-app" style="font-family: Arial; max-width: 650px;">
   <h2>Input / Output (Interactive Viewer)</h2>
