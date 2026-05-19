@@ -37,7 +37,7 @@ Here are all the requirements in order. To go through the path, you can click on
             Data Types
         </div>
     </a>
-</div>\
+</div>
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
     <a href="http://captainsam12.opencodingsociety.com/Operators" style="text-decoration: none;">
