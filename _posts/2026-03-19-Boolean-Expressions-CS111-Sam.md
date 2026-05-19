@@ -11,132 +11,159 @@ permalink: /Boolean-Expressions
 
 ---
 
-# 🔤 String Operations  
-Path concatenation, text display, and working with text in games
+# 🔘 Boolean Expressions  
+Compound conditions in game logic
 
-## What Are String Operations?
-A **string** is text in programming — anything inside quotes:
+## What Are Boolean Expressions?
+A **Boolean expression** is anything that evaluates to either:
 
-```js
-"Hello"
-"player.png"
-"Level 1 Complete!"
-```
+- **true**  
+- **false**
 
-**String operations** are actions you perform on text, such as:
+Games rely on Boolean logic constantly — every decision the game makes is based on conditions:
 
-- Combining strings  
-- Formatting text  
-- Displaying text on screen  
-- Building file paths  
-- Creating messages for the player  
+- *Is the player touching the ground?*  
+- *Is the enemy close enough to attack?*  
+- *Is the score high enough to unlock the next level?*  
 
-Strings are essential for UI, debugging, file loading, and game logic.
+Boolean expressions are the foundation of all branching game logic.
 
 ---
 
-## Path Concatenation  
-Games often need to load assets like:
+## Simple Boolean Conditions
+A simple condition checks **one thing**:
 
-- Images  
-- Sounds  
-- Level files  
-- Animations  
-
-These files are usually stored in folders, so you build paths using strings.
-
-### Example:
 ```js
-const basePath = "assets/images/";
-const fileName = "pirate.png";
-
-const fullPath = basePath + fileName;
+if (player.y > groundLevel) { ... }
+if (health <= 0) { ... }
+if (keyPressed === "Space") { ... }
 ```
 
-`fullPath` becomes:
-
-```
-"assets/images/pirate.png"
-```
-
-This is **path concatenation** — combining strings to form a complete file path.
-
-### Why it matters:
-- Lets you organize assets cleanly  
-- Allows dynamic loading (e.g., load a sprite based on character type)  
-- Avoids hard‑coding every path manually  
+These are the building blocks of more complex logic.
 
 ---
 
-## Text Display  
-Strings are also used to show information to the player.
+## Compound Conditions  
+Compound conditions combine multiple checks using:
 
-Examples:
+- **&&** (AND)  
+- **||** (OR)  
+- **!** (NOT)
 
-- Score  
-- Health  
-- Dialogue  
-- Notifications  
-- Debug messages  
-
-### Example:
-```js
-const scoreText = "Score: " + this.score;
-```
-
-Or using template strings:
-
-```js
-const scoreText = `Score: ${this.score}`;
-```
-
-Template strings are cleaner and easier to read.
+These allow your game to make smarter decisions.
 
 ---
 
-## Example Code (Simple & Clear)
+## AND (&&)  
+All conditions must be **true**.
+
+Example: Player can jump only if they are **on the ground AND not stunned**.
 
 ```js
-class Player {
-    constructor(name) {
-        this.name = name;
-        this.score = 0;
-    }
-
-    getSpritePath() {
-        const base = "assets/sprites/";
-        return base + this.name.toLowerCase() + ".png";
-    }
-
-    getScoreText() {
-        return `Score: ${this.score}`;
-    }
+if (player.onGround && !player.isStunned) {
+    player.jump();
 }
-
-const p = new Player("Ironhook");
-
-console.log(p.getSpritePath());  // "assets/sprites/ironhook.png"
-console.log(p.getScoreText());   // "Score: 0"
 ```
-
-This demonstrates:
-
-- Path concatenation  
-- Text display  
-- Template strings  
-- Using strings inside class methods  
 
 ---
 
-## Why Teachers Assign This
-String operations show that you understand:
+## OR (||)  
+At least **one** condition must be true.
 
-- How to build file paths dynamically  
-- How to format text for UI  
-- How to combine variables with text  
-- How to use template strings  
-- How to integrate text into game logic  
+Example: Player can move left using **A OR Left Arrow**.
 
-Strings are everywhere in game development — menus, HUDs, dialogue, debugging, and asset loading all rely on them.
+```js
+if (keys["ArrowLeft"] || keys["a"]) {
+    player.x -= player.speed;
+}
+```
 
+---
+
+## NOT (!)  
+Flips true → false or false → true.
+
+Example: Enemy moves only when **not** frozen.
+
+```js
+if (!enemy.isFrozen) {
+    enemy.updateMovement();
+}
+```
+
+---
+
+## Combining Multiple Conditions  
+Game logic often needs several checks at once.
+
+Example: Player takes damage only if:
+
+- They collide with an enemy  
+- AND they are not invincible  
+- AND the enemy is active  
+
+```js
+if (player.collidesWith(enemy) &&
+    !player.invincible &&
+    enemy.active) {
+    player.takeDamage(10);
+}
+```
+
+This is a realistic compound condition used in many engines.
+
+---
+
+## Example: Platformer Movement Logic
+
+```js
+// Player can jump if:
+// 1. W or Space is pressed
+// 2. AND the player is on the ground
+// 3. AND the player is not sliding
+
+if ((keys["w"] || keys[" "]) &&
+    player.onGround &&
+    !player.isSliding) {
+    player.jump();
+}
+```
+
+This shows how Boolean expressions control gameplay flow.
+
+---
+
+## Example: Level Completion Logic
+
+```js
+if (player.x >= goal.x &&
+    player.y <= goal.y + 20 &&
+    score >= requiredScore) {
+    level.complete();
+}
+```
+
+The level only completes when **all** conditions are satisfied.
+
+---
+
+## Why?
+Boolean expressions demonstrate that you understand:
+
+- How to combine multiple conditions  
+- How to control game behavior with logic  
+- How to write readable, structured decision code  
+- How to prevent bugs by checking all required states  
+- How real game engines make decisions every frame  
+
+Boolean logic is the backbone of gameplay programming.
+
+---
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
+    <a href="http://captainsam12.opencodingsociety.com/MainHub" style="text-decoration: none;">
+        <div style="background-color: #f91d1d; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Back To MainHub
+        </div>
+    </a>
+</div>
 ---
