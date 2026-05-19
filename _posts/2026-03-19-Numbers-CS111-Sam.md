@@ -135,3 +135,11 @@ Working with numbers shows that you understand:
 Numbers are the backbone of almost every game mechanic.
 
 ---
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/js/strings" style="text-decoration: none;">
+        <div style="background-color: #ff9ad7; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Strings
+        </div>
+    </a>
+</div>
+---

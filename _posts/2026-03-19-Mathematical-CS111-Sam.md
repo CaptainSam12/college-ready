@@ -170,3 +170,12 @@ Physics calculations show that you understand:
 These are essential skills for building any interactive game.
 
 ---
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/String-Operations" style="text-decoration: none;">
+        <div style="background-color: #97e3ff; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            String Operations
+        </div>
+    </a>
+</div>
+
+---

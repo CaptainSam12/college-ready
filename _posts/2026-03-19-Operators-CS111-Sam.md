@@ -28,6 +28,14 @@ permalink: /Operators
     </a>
 </div>
 
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/Boolean-Expressions" style="text-decoration: none;">
+        <div style="background-color: #59ff4d; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Boolean Expressions
+        </div>
+    </a>
+</div>
+
 ---
 <div id="operators-app" style="font-family: Arial; max-width: 650px;">
   <h2>Operators (Interactive Viewer)</h2>

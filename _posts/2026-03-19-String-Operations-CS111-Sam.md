@@ -140,3 +140,11 @@ String operations show that you understand:
 Strings are everywhere in game development — menus, HUDs, dialogue, debugging, and asset loading all rely on them.
 
 ---
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/Boolean-Expressions" style="text-decoration: none;">
+        <div style="background-color: #59ff4d; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Boolean Expressions
+        </div>
+    </a>
+</div>
+---
