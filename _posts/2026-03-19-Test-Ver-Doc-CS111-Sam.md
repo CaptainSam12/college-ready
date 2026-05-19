@@ -6,7 +6,7 @@ description: Testing Verification + Documentation - CS111 Review
 permalink: /tvd
 ---
 
-## **1. Code Documentation — JSDoc Comments**
+## **1. Code Documentation — JSDoc Comments and Code Highlights**
 
 Writing clear documentation ensures that anyone reading your code (including you months later) can understand how each part works.  
 Below is an example of how JSDoc is used in the engine.  
@@ -151,7 +151,7 @@ handleCollisionEvent() {
 
 ---
 
-## **3. API Integration Testing**
+## **3. Integration Testing**
 
 ```js
 // Test: POST a score, then GET leaderboard to confirm it saved.
