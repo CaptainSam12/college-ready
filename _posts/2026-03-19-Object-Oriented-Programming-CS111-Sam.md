@@ -13,6 +13,15 @@ permalink: /OOP
 ---
 
 
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="http://captainsam12.opencodingsociety.com/wc" style="text-decoration: none;">
+        <div style="background-color: #ff002f; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Writing Classes
+        </div>
+    </a>
+</div>
+
+
 <div id="oop-app" style="font-family: Arial; max-width: 650px;">
   <h2>Object-Oriented Programming </h2>
   <p>Click a concept to learn more.</p>

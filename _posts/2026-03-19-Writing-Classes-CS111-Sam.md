@@ -83,50 +83,24 @@ Writing classes teaches you:
 
 It’s one of the core skills in object‑oriented programming.
 
-# Example
+# How is this demonstrated in our game?
 
+When we see lines like this:
 
-%%js
-// Base class: Pirate
-class Pirate {
-    constructor(name, health, power) {
-        this.name = name;
-        this.health = health;
-        this.power = power;
-    }
+class Player extends Character {
 
-    attack(target) {
-        target.health -= this.power;
-    }
-}
+It shows how "Player" inherits traits from an already established class such as character. In our pirate themed game. we see:
 
-// Subclass #1: Buccaneer
-class Buccaneer extends Pirate {
-    constructor(name) {
-        super(name, 140, 18);
-    }
+class Rival-Pirate extends Skeleton-Guard
 
-    rumRage(target) {
-        target.health -= this.power * 2;
-    }
-}
+Skeleton-Guard is a level 1 enemy, which we can extend upon and make a level 2 enemy such as Rival-Pirate. We can now give Rival-Pirate more traits such as higher XP and more attack damage.
 
-// Subclass #2: Sea Witch
-class SeaWitch extends Pirate {
-    constructor(name) {
-        super(name, 90, 12);
-    }
+And you can play the game here:
 
-    tidalHex(target) {
-        target.health -= this.power + 25;
-    }
-}
-
-// Simple example of usage
-const b = new Buccaneer("Ironhook");
-const w = new SeaWitch("Morganna Tidecaller");
-
-b.attack(w);
-w.tidalHex(b);
-
-console.log(b, w);
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+    <a href="https://aashihegu1-stack.github.io/SAR/gamify/PirateMegaGame" style="text-decoration: none;">
+        <div style="background-color: #ff002f; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+        Methods & Parameters
+        </div>
+    </a>
+</div>
